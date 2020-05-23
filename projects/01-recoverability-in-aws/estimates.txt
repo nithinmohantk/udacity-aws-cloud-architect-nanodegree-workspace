@@ -1,18 +1,35 @@
-RTO (Recovery Time Object)
-RPO (Recovery Point Object)
 
-AZ/DataCenter Outage
----------
+Brief Overview: 
+
+RTO (Recovery Time Object)
+- The Recovery Time Objective (RTO)[8][9] is the targeted duration of time and a service level within which a business process must be restored after a disaster (or disruption) in order to avoid unacceptable consequences associated with a break in business continuity.[Wikipedia]  
+
+RPO (Recovery Point Object)
+A Recovery Point Objective (RPO) is defined by business continuity planning. It is the maximum targeted period in which data (transactions) might be lost from an IT service due to a major incident.[10]
+
+If RPO is measured in minutes (or even a few hours), then in practice, off-site mirrored backups must be continuously maintained; a daily off-site backup on tape will not suffice.[1] 
+
+Source: https://en.wikipedia.org/wiki/Disaster_recovery 
+
+
+Project Report: 
+
+
+In the event of an AZ/DataCenter Outage
+-------------------------------------
 
 In a Multi-AZ, for a single AZ outage, the RTO is the time it takes to start up a new RDS instance.
 - Minimum RTO will be around 2-3 minutes. 
 Data loss is minimised as we failover from our primary instance to our secondary instance with no data lose.
 - Minimum RPO will be 0.
 
-Regional Outage
----------------
+In the event of aRegional Outage
+----------------------------------
 
 In the event of a single region outage, the RTO will be the time to promote the replica as the active. 
 - Minimum RTO will be around 5 minutes to promote the replica. 
-Read replica is asynchronous cross region 
+Read replica is asynchronous cross region, and it is near instantanious replication  
 - Minimum RPO is 0.
+
+
+
