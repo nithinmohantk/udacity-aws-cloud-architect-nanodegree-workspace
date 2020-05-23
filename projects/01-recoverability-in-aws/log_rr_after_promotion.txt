@@ -1,0 +1,100 @@
+mysql> SELECT * from users
+SELECT * from users
+^C
+mysql> SELECT * FROM users;
+ERROR 2013 (HY000): Lost connection to MySQL server during query
+mysql> SELECT * FROM users;
+ERROR 2006 (HY000): MySQL server has gone away
+No connection. Trying to reconnect...
+Connection id:    6
+Current database: udacity
+
++------+-----------+----------+-------------+--------------------+
+| id   | name      | username | password    | email              |
++------+-----------+----------+-------------+--------------------+
+|    1 | John Doe  | john     | Password123 | john@thingx.cloud  |
+|    2 | Jane Doe  | jane     | Password123 | jane@thingx.cloud  |
+|    3 | Jason Doe | jason    | Password123 | jason@thingx.cloud |
+|    3 | Alpha Doe | alpha    | Password123 | alpha@thingx.cloud |
+|    5 | James Doe | james    | Password123 | james@thingx.cloud |
++------+-----------+----------+-------------+--------------------+
+5 rows in set (0.07 sec)
+
+mysql> SELECT * FROM users;
++------+-----------+----------+-------------+--------------------+
+| id   | name      | username | password    | email              |
++------+-----------+----------+-------------+--------------------+
+|    1 | John Doe  | john     | Password123 | john@thingx.cloud  |
+|    2 | Jane Doe  | jane     | Password123 | jane@thingx.cloud  |
+|    3 | Jason Doe | jason    | Password123 | jason@thingx.cloud |
+|    3 | Alpha Doe | alpha    | Password123 | alpha@thingx.cloud |
+|    5 | James Doe | james    | Password123 | james@thingx.cloud |
++------+-----------+----------+-------------+--------------------+
+5 rows in set (0.00 sec)
+
+mysql> update users set id=4 where username='alpha';
+Query OK, 1 row affected (0.01 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> INSERT INTO users (id,name,email,username,password) VALUES(5,"James Doe","james@thingx.cloud","james","Password123");
+Query OK, 1 row affected (0.00 sec)
+
+mysql> SELECT * FROM users;
++------+-----------+----------+-------------+--------------------+
+| id   | name      | username | password    | email              |
++------+-----------+----------+-------------+--------------------+
+|    1 | John Doe  | john     | Password123 | john@thingx.cloud  |
+|    2 | Jane Doe  | jane     | Password123 | jane@thingx.cloud  |
+|    3 | Jason Doe | jason    | Password123 | jason@thingx.cloud |
+|    4 | Alpha Doe | alpha    | Password123 | alpha@thingx.cloud |
+|    5 | James Doe | james    | Password123 | james@thingx.cloud |
+|    5 | James Doe | james    | Password123 | james@thingx.cloud |
++------+-----------+----------+-------------+--------------------+
+6 rows in set (0.00 sec)
+
+mysql> DELETE FROM users where id=5
+    -> ;
+Query OK, 2 rows affected (0.01 sec)
+
+mysql>  INSERT INTO users (id,name,email,username,password) VALUES(5,"James Doe","james@thingx.cloud","james","Password123");
+ INSERT INTO users (id,name,email,username,password) VALUES(5,"James Doe","james@thingx.cloud","james","Password123");
+^C
+mysql> select * from users
+select * from users
+^C
+mysql> SELECT * FROM users;
++------+-----------+----------+-------------+--------------------+
+| id   | name      | username | password    | email              |
++------+-----------+----------+-------------+--------------------+
+|    1 | John Doe  | john     | Password123 | john@thingx.cloud  |
+|    2 | Jane Doe  | jane     | Password123 | jane@thingx.cloud  |
+|    3 | Jason Doe | jason    | Password123 | jason@thingx.cloud |
+|    4 | Alpha Doe | alpha    | Password123 | alpha@thingx.cloud |
++------+-----------+----------+-------------+--------------------+
+4 rows in set (0.00 sec)
+
+mysql> INSERT INTO users (id,name,email,username,password) VALUES(5,"James Doe","james@thingx.cloud","james","Password123");
+Query OK, 1 row affected (0.01 sec)
+
+mysql> INSERT INTO users (id,name,email,username,password) VALUES(6,"Jake Doe","jake@thingx.cloud","jake","Password123");
+Query OK, 1 row affected (0.00 sec)
+
+mysql> INSERT INTO users (id,name,email,username,password) VALUES(7,"Jim Doe","jim@thingx.cloud","jim","Password123");
+Query OK, 1 row affected (0.00 sec)
+
+mysql> SELECT * FROM users;
++------+-----------+----------+-------------+--------------------+
+| id   | name      | username | password    | email              |
++------+-----------+----------+-------------+--------------------+
+|    1 | John Doe  | john     | Password123 | john@thingx.cloud  |
+|    2 | Jane Doe  | jane     | Password123 | jane@thingx.cloud  |
+|    3 | Jason Doe | jason    | Password123 | jason@thingx.cloud |
+|    4 | Alpha Doe | alpha    | Password123 | alpha@thingx.cloud |
+|    5 | James Doe | james    | Password123 | james@thingx.cloud |
+|    6 | Jake Doe  | jake     | Password123 | jake@thingx.cloud  |
+|    7 | Jim Doe   | jim      | Password123 | jim@thingx.cloud   |
++------+-----------+----------+-------------+--------------------+
+7 rows in set (0.01 sec)
+
+mysql>
+

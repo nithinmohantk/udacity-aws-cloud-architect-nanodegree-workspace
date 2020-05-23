@@ -1,0 +1,30 @@
+
+
+sudo yum install -y https://dev.mysql.com/get/mysql57-community-release-el7-11.noarch.rpm
+sudo yum install -y mysql-community-client
+
+
+mysql -h mysqldb.cjvxacioqbjy.eu-west-1.rds.amazonaws.com -D udacity -u admin -p 
+
+mysql -h mysqldbreplica.cx9qhw7vnzsf.eu-west-2.rds.amazonaws.com -D udacity -u admin -p 
+
+CREATE TABLE users(id INT, name VARCHAR(100), username VARCHAR(100), password VARCHAR(100), email VARCHAR(100));
+
+SHOW TABLES;
+
+
+INSERT INTO users (id,name,email,username,password) VALUES(1,"John Doe","john@thingx.cloud","john","Password123");
+INSERT INTO users (id,name,email,username,password) VALUES(2,"Jane Doe","jane@thingx.cloud","jane","Password123");
+INSERT INTO users (id,name,email,username,password) VALUES(3,"Jason Doe","jason@thingx.cloud","jason","Password123");
+INSERT INTO users (id,name,email,username,password) VALUES(4,"Alpha Doe","alpha@thingx.cloud","alpha","Password123");
+
+
+INSERT INTO users (id,name,email,username,password) VALUES(5,"James Doe","james@thingx.cloud","james","Password123");
+
+INSERT INTO users (id,name,email,username,password) VALUES(6,"Jake Doe","jake@thingx.cloud","jake","Password123");
+
+INSERT INTO users (id,name,email,username,password) VALUES(7,"Jim Doe","jim@thingx.cloud","jim","Password123");
+
+update users set id=4 where username='alpha'; and id='3'
+
+SELECT * FROM users;

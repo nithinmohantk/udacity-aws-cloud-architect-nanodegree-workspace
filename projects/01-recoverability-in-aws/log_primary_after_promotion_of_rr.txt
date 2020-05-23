@@ -1,0 +1,95 @@
+mysql> INSERT INTO users (id,name,email,username,password) VALUES(5,"James Doe","james@thingx.cloud","james","Password123");
+Query OK, 1 row affected (0.00 sec)
+
+mysql> SELECT * FROM users;
++------+-----------+----------+-------------+--------------------+
+| id   | name      | username | password    | email              |
++------+-----------+----------+-------------+--------------------+
+|    1 | John Doe  | john     | Password123 | john@thingx.cloud  |
+|    2 | Jane Doe  | jane     | Password123 | jane@thingx.cloud  |
+|    3 | Jason Doe | jason    | Password123 | jason@thingx.cloud |
+|    3 | Alpha Doe | alpha    | Password123 | alpha@thingx.cloud |
+|    5 | James Doe | james    | Password123 | james@thingx.cloud |
++------+-----------+----------+-------------+--------------------+
+5 rows in set (0.00 sec)
+
+mysql> SELECT * FROM users;
++------+-----------+----------+-------------+--------------------+
+| id   | name      | username | password    | email              |
++------+-----------+----------+-------------+--------------------+
+|    1 | John Doe  | john     | Password123 | john@thingx.cloud  |
+|    2 | Jane Doe  | jane     | Password123 | jane@thingx.cloud  |
+|    3 | Jason Doe | jason    | Password123 | jason@thingx.cloud |
+|    3 | Alpha Doe | alpha    | Password123 | alpha@thingx.cloud |
+|    5 | James Doe | james    | Password123 | james@thingx.cloud |
++------+-----------+----------+-------------+--------------------+
+5 rows in set (0.00 sec)
+
+mysql> INSERT INTO users (id,name,email,username,password) VALUES(6,"Jake Doe","jake@thingx.cloud","jake","Password123");
+Query OK, 1 row affected (0.01 sec)
+
+mysql> update users set id=4 where username='alpha@thingx.cloud' and id='3'
+    -> ;
+Query OK, 0 rows affected (0.01 sec)
+Rows matched: 0  Changed: 0  Warnings: 0
+
+mysql> SELECT * FROM users;
++------+-----------+----------+-------------+--------------------+
+| id   | name      | username | password    | email              |
++------+-----------+----------+-------------+--------------------+
+|    1 | John Doe  | john     | Password123 | john@thingx.cloud  |
+|    2 | Jane Doe  | jane     | Password123 | jane@thingx.cloud  |
+|    3 | Jason Doe | jason    | Password123 | jason@thingx.cloud |
+|    3 | Alpha Doe | alpha    | Password123 | alpha@thingx.cloud |
+|    5 | James Doe | james    | Password123 | james@thingx.cloud |
+|    6 | Jake Doe  | jake     | Password123 | jake@thingx.cloud  |
++------+-----------+----------+-------------+--------------------+
+6 rows in set (0.00 sec)
+
+mysql> update users set id=4 where username='alpha@thingx.cloud';
+Query OK, 0 rows affected (0.01 sec)
+Rows matched: 0  Changed: 0  Warnings: 0
+
+mysql> update users set [id]=4 where username="alpha';
+    "> ;
+    "> "
+    -> ;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '[id]=4 where username="alpha';
+;
+"' at line 1
+mysql> update users set id=4 where username='alpha'
+    -> ;
+Query OK, 1 row affected (0.02 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> SELECT * FROM users;
++------+-----------+----------+-------------+--------------------+
+| id   | name      | username | password    | email              |
++------+-----------+----------+-------------+--------------------+
+|    1 | John Doe  | john     | Password123 | john@thingx.cloud  |
+|    2 | Jane Doe  | jane     | Password123 | jane@thingx.cloud  |
+|    3 | Jason Doe | jason    | Password123 | jason@thingx.cloud |
+|    4 | Alpha Doe | alpha    | Password123 | alpha@thingx.cloud |
+|    5 | James Doe | james    | Password123 | james@thingx.cloud |
+|    6 | Jake Doe  | jake     | Password123 | jake@thingx.cloud  |
++------+-----------+----------+-------------+--------------------+
+6 rows in set (0.00 sec)
+
+mysql> INSERT INTO users (id,name,email,username,password) VALUES(7,"Jim Doe","jim@thingx.cloud","jim","Password123");
+Query OK, 1 row affected (0.01 sec)
+
+mysql> SELECT * FROM users;
++------+-----------+----------+-------------+--------------------+
+| id   | name      | username | password    | email              |
++------+-----------+----------+-------------+--------------------+
+|    1 | John Doe  | john     | Password123 | john@thingx.cloud  |
+|    2 | Jane Doe  | jane     | Password123 | jane@thingx.cloud  |
+|    3 | Jason Doe | jason    | Password123 | jason@thingx.cloud |
+|    4 | Alpha Doe | alpha    | Password123 | alpha@thingx.cloud |
+|    5 | James Doe | james    | Password123 | james@thingx.cloud |
+|    6 | Jake Doe  | jake     | Password123 | jake@thingx.cloud  |
+|    7 | Jim Doe   | jim      | Password123 | jim@thingx.cloud   |
++------+-----------+----------+-------------+--------------------+
+7 rows in set (0.00 sec)
+
+mysql>
