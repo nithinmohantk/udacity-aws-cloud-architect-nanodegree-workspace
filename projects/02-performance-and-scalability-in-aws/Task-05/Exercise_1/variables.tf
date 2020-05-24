@@ -1,16 +1,7 @@
 variable "region" {
-    description = "The AWS region to use"
+    description = "AWS region to use for provisioning"
     default = "eu-west-1"
 }
-
-variable "runtime" {
-  default = "python3.8"
-}
-
-variable "lambda_function_name" {
-  default = "greet_lambda"
-}
-
 
 variable "shared_credentials_file" {
   description = "Credentials for authentication"
