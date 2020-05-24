@@ -18,6 +18,8 @@ https://calculator.aws/#/estimate?id=5c998ad862632821c9cdd4a951d919f934fe1d25
 2. Increased NAT throwput, and RDS storage/size to handle more workload. Instance also updated to better fitting one. (db.m5.12xlarge)
  - 8x t6 web tier instances 
  - 8x t6 app tier instances
+ - updated NAT throwput
+ - EBS storage size per instance increased 
  
 https://calculator.aws/#/estimate?id=80be10c6cb6d3452cbdb810c4d4098a53e769ef6
 https://calculator.aws/#/estimate?id=5c76073231c910c0939af4dc61da8ebdc6b81648
