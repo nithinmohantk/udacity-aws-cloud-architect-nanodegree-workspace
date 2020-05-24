@@ -1,0 +1,14 @@
+Group hierarchy,Region,Service,Upfront,Monthly,First 12 months total,Currency,Configuration summary
+UdacityEstimate,US East (N. Virginia),Amazon RDS for MySQL,0,7962.072,95544.86,USD,"Quantity (2), Storage for each RDS instance (General Purpose SSD (gp2)), Storage amount (200 GB), Instance type (db.m5.12xlarge), Additional backup storage (2 TB)"
+UdacityEstimate,US East (N. Virginia),S3 Standard,0,2304,27648.00,USD,S3 Standard storage (100 TB per month)
+UdacityEstimate,US East (N. Virginia),Data Transfer,0,0,0.00,USD,Data Transfer
+UdacityEstimate,US East (N. Virginia),Amazon Route 53,0,369,4428.00,USD,Number of Elastic Network Interfaces (4)
+UdacityEstimate,US East (N. Virginia),Elastic Load Balancing,0,746.43,8957.16,USD,Number of Application Load Balancers (1)
+UdacityEstimate,US East (N. Virginia),Amazon Virtual Private Cloud (VPC),0,493.65,5923.80,USD,Number of NAT Gateways (1)
+UdacityEstimate,US East (N. Virginia),Amazon EC2,0,3696.29,44355.48,USD,"Operating system (Linux), Quantity (8), Storage for each EC2 instance (Provisioned IOPS SSD (io1)), Storage amount (2 TB), Provisioning IOPS (1000), Instance type (m6g.2xlarge)"
+UdacityEstimate,US East (N. Virginia),Amazon CloudWatch,0,300,3600.00,USD,
+UdacityEstimate,US East (N. Virginia),Amazon EC2,0,2645.42,31745.04,USD,"Operating system (Linux), Quantity (8), Storage for each EC2 instance (Provisioned IOPS SSD (io1)), Storage amount (1 TB), Provisioning IOPS (1000), Instance type (t3a.2xlarge)"
+
+
+
+"AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services."
