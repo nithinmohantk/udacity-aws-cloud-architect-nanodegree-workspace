@@ -10,6 +10,7 @@ https://calculator.aws/#/estimate?id=aaa0b4b47c0da5f4169c6f552422cc1b1f5c4c91
 Added specific t3 shape for EC2 in web and m4 shape for app tier.
  - 4x t3 web tier instances 
  - 4x m4 app tier instances
+ 
 https://calculator.aws/#/estimate?id=5c998ad862632821c9cdd4a951d919f934fe1d25
 
 # [High Cost Estimate](Increased_Cost Estimate.csv) 
@@ -17,5 +18,6 @@ https://calculator.aws/#/estimate?id=5c998ad862632821c9cdd4a951d919f934fe1d25
 2. Increased NAT throwput, and RDS storage/size to handle more workload. Instance also updated to better fitting one. (db.m5.12xlarge)
  - 8x t6 web tier instances 
  - 8x t6 app tier instances
+ 
 https://calculator.aws/#/estimate?id=80be10c6cb6d3452cbdb810c4d4098a53e769ef6
 https://calculator.aws/#/estimate?id=5c76073231c910c0939af4dc61da8ebdc6b81648
