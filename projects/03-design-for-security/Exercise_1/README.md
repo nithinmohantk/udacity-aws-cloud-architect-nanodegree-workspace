@@ -1,6 +1,6 @@
 ## Deploy the S3 buckets
 
-`aws cloudformation create-stack --region us-east-1 --stack-name c3-s3 --template-body file://Exercise_1/c3-s3.yml`
+`aws cloudformation create-stack --region us-east-1 --stack-name c3-s3 --template-body file://c3-s3.yml`
 
 Expected Output:
 
@@ -18,7 +18,7 @@ Result:
 
 ## Deploy VPC and Subnets
 
-`aws cloudformation create-stack --region us-east-1 --stack-name c3-vpc --template-body file://Exercise_1/c3-vpc.yml`
+`aws cloudformation create-stack --region us-east-1 --stack-name c3-vpc --template-body file://c3-vpc.yml`
 
 Expected Output:
 
@@ -38,7 +38,7 @@ Result:
 
 ## Deploy Application Stack
 
-`aws cloudformation create-stack --region us-east-1 --stack-name c3-app --template-body file://Exercise_1/c3-app.yml --parameters ParameterKey=KeyPair,ParameterValue=thinx-dev-sample --capabilities CAPABILITY_IAM
+`aws cloudformation create-stack --region us-east-1 --stack-name c3-app --template-body file://c3-app.yml --parameters ParameterKey=KeyPair,ParameterValue=thinx-dev-sample --capabilities CAPABILITY_IAM
 `
 
 Expected Output:
@@ -50,7 +50,7 @@ Expected Output:
 ```
 Result: 
 ```
- aws cloudformation create-stack --region us-east-1 --stack-name c3-app --template-body file://Exercise_1/c3-app.yml --parameters ParameterKey=KeyPair,ParameterValue=thinx-dev-sample --capabilities CAPABILITY_IAM
+ aws cloudformation create-stack --region us-east-1 --stack-name c3-app --template-body file://c3-app.yml --parameters ParameterKey=KeyPair,ParameterValue=thinx-dev-sample --capabilities CAPABILITY_IAM
 {
     "StackId": "arn:aws:cloudformation:us-east-1:305706552515:stack/c3-app/1e99a120-a5e5-11ea-a099-120fbf0f0187"
 }
@@ -81,3 +81,8 @@ upload: .\secret_recipe.txt to s3://cand-c3-secret-recipes-305706552515/secret_r
 
 Result:
 ```http://c1-web-service-alb-626998269.us-east-1.elb.amazonaws.com/free_recipe```
+
+
+## Delete the stack 
+
+```aws cloudformation delete-stack --region us-east-1 --stack-name c3-app```
