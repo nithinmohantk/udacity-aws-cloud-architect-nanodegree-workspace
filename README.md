@@ -20,7 +20,9 @@ This repository contains my practical project works for **Udacity AWS Cloud Arch
  3. Visual Studio Code 
 
 ### AWS CLI
-- Install [NodeJS LTS version 10](https://nodejs.org/dist/latest-v10.x/).
+- Install [AWS CLI for Windows](https://awscli.amazonaws.com/AWSCLIV2.msi) | [Other Platforms](https://aws.amazon.com/cli/).
+- [Installing the CLI](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html)
+- [Configuring the CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html)
 
 ### Install Terraform CLI
 - Install [Terraform CLI](https://learn.hashicorp.com/terraform/getting-started/install)
@@ -29,7 +31,7 @@ This repository contains my practical project works for **Udacity AWS Cloud Arch
 You can use any code editor or IDE that supports client-side development to build your web part, such as:
 - [Visual Studio Code](https://code.visualstudio.com/)  * I used Code
 
-## Useful Commands 
+## Useful Terraform Commands 
 
 ```terrafrom init```
 
@@ -53,7 +55,6 @@ Terraform will attempt when it comes to provision the infrastructure according t
 
 Execute the plan by running terraform apply:
 ```terraform apply -var-file="definitions.tfvars"```
-
 
 ## Usage 
 You can use the source code in repository under MIT License without any warranty or support. Free to use, without any royalty.
