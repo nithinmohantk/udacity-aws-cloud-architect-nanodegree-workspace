@@ -1,0 +1,3 @@
+AWS GuardDuty periodically monitors data from AWS CloudTrail, VPC Flow Logs and DNS Logs to come up with threats analyzed. 
+
+To detect the SSH brute attack, Guard Duty would have analyzed the to/from traffic data using the VPC Flow logs. VPC Flow logs will have information on traffic going to and from the EC2 network interfaces.
