@@ -1,0 +1,26 @@
+Research and analyze which of the vulnerabilities appear to be related to the code that was deployed for the environment in this project.
+
+1.) IAM policy is not following the principle of least privilege, allowing full access to resources.
+2.) Loadbalancer is not configured to redirect Non-SSL(HTTP) requests to SSL(HTTPS)
+3.) Application running on port 5000 can be easily accessible directly from public internet. 
+4.) Serverside encryption and Logging is not enabled for S3 buckets
+5.) IAM password policy - minimum length - Root account is not complaint 
+6.) EC2 instance should be managed by AWS Systems Manager.
+
+
+
+**Bonus** - provide recommendations on how to remediate the vulnerabilities.
+--------------
+-- IAM:
+---- More Strictier/stringent password policy. Prevent reusing of previous passwords.
+---- Update Root account password to meet the PAssword policy.
+---- Update IAM policy to readonly 
+-- Limit traffic on loadbalancer 
+
+-- EC2 Intances:
+---- Allow traffic only from Security Groups 
+---- Disable unnecessary port access to the EC2 instance.
+---- configure instance to be managed through AWS Systems Manager.
+
+-- Storage:
+---- S3 buckets- Enable logging  
