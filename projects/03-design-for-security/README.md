@@ -2,7 +2,7 @@
 
 The exercises has been organized in to different folders to support the requirements
 
-1. [Exercise_1](/Exercise_1)
+1. [Exercise_1](Exercise_1)
 2. [Exercise_2](/Exercise_2)
 3. [Exercise_3](/Exercise_3)
 4. [Exercise_4](/Exercise_4)
