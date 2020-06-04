@@ -8,23 +8,51 @@ This repository contains my practical project works for **Udacity AWS Cloud Arch
 ### Folder Structure 
 * **exercises** - contains sample works as part of the labs from the chapters.
 * **project**  - contains actual project work submitted as part of the assignments for the curriculam.
+- [01-recoverability-in-aws](projects/01-recoverability-in-aws)
+- [02-performance-and-scalability-in-aws](projects/02-performance-and-scalability-in-aws)
+- [03-design-for-security](projects/03-design-for-security)
 
 ## Installation 
- The samples and projects found in this repository are created using Visual Studio Code and Node.js/NPM/ExpressJS stack and it require certain global NPM components and project NPM components(project.json). 
-  I used Windows 10 and 
+ 
+ You need the following components for running the exercises:
+ 1. AWS CLI
+ 2. Terraform CLI
+ 3. Visual Studio Code 
 
-### Install NodeJS
-Install [NodeJS LTS version 10](https://nodejs.org/dist/latest-v10.x/).
+### AWS CLI
+- Install [NodeJS LTS version 10](https://nodejs.org/dist/latest-v10.x/).
 
-- If you are in Windows, you can use the msi installers ([x86](https://nodejs.org/dist/latest-v10.x/node-v10.19.0-x86.msi) or [x64](https://nodejs.org/dist/latest-v10.x/node-v10.19.0-x64.msi)) in this link for the easiest way to set up NodeJS (notice that these direct links evolve over time, so check the latest v10 from the above directory).
-- If you have NodeJS already installed, check that you have the correct version by using `node -v`. It should return version 10.19.0.
+### Install Terraform CLI
+- Install [Terraform CLI](https://learn.hashicorp.com/terraform/getting-started/install)
 
 ### Install Visual Studio Code IDE
 You can use any code editor or IDE that supports client-side development to build your web part, such as:
 - [Visual Studio Code](https://code.visualstudio.com/)  * I used Code
-- [Atom](https://atom.io)
-- [Webstorm](https://www.jetbrains.com/webstorm)
-The steps and examples in this documentation use [Visual Studio Code](https://code.visualstudio.com/), but you can use any editor of your choice.
+
+## Useful Commands 
+
+```terrafrom init```
+
+```terraform plan```
+
+```terraform apply```
+
+```terraform destroy```
+
+```terraform destroy --target={instanceId_here}```
+
+```terraform show```
+
+```terraform state list```
+
+Command to test the validity of your configuration:
+```terraform validate```
+
+Terraform will attempt when it comes to provision the infrastructure according to your configuration:
+```terraform plan -var-file="definitions.tfvars"```
+
+Execute the plan by running terraform apply:
+```terraform apply -var-file="definitions.tfvars"```
 
 
 ## Usage 
