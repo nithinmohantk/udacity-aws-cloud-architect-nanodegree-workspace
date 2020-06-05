@@ -60,7 +60,7 @@ Execute the plan by running terraform apply:
 You can use the source code in repository under MIT License without any warranty or support. Free to use, without any royalty.
 
 ## Completion Certificate
-![Completion Cert](images/certificate.png)
+![Completion Cert](images/certificate.PNG)
 
 ### License 
 MIT License © 2020
