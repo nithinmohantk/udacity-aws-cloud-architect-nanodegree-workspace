@@ -2,6 +2,7 @@
 This repository contains my practical project works for **Udacity AWS Cloud Architect Nanodegree program**.  As part of working from home due to **COVID-19**, I decided to utilize my free time and do something to upskill myself with help of available free resources. With such interest I started with _[Udacity AWS Cloud Architect Nano Degree](https://www.udacity.com/course/aws-cloud-architect-nanodegree--nd063)_
 
 ## Project Status
+** COMPLETED - June'04 2020 **
 
 ## Getting Started
 
